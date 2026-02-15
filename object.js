@@ -53,4 +53,12 @@ console.log(user4.nickName,user4.name,user4.int,user4["0"],user4[0],);
 let obj ={};
 
 obj.__proto__ = 5;
-console.log(obj.__proto__);
+console.log(obj.__proto__,obj['3'] == undefined);
+
+let user5 = {name : 'ani' , age :30 ,test : undefined};
+let myName = 'age'
+console.log( 'name' in user5  , 'ani' in user5, myName in user5,
+    user5.test  , 'test' in user5
+);
+
+
